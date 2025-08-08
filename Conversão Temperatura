@@ -1,0 +1,17 @@
+/*Exercício de Conversão de Temperatura: Crie um programa que peça ao usuário
+para digitar uma temperatura em graus Celsius e converta-a para Fahrenheit. Em
+seguida, exiba o resultado na tela.*/
+
+import java.util.Scanner;
+public class Temperatura {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Insira a Temperatura para conversão: ");
+        double tempCelcius = scanner.nextDouble();
+        
+        double tempFahrenheit = (1.8 * tempCelcius) + 32;
+                
+        System.out.printf("Fahrenheit: %.2f", tempFahrenheit);
+    }
+}
