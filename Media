@@ -1,0 +1,26 @@
+/*Exercício de Cálculo de Média: Crie um programa que solicite ao usuário três
+notas (números de ponto flutuante) e calcule a média aritmética das notas. Em
+seguida, exiba a média na tela.*/
+
+import java.util.Scanner;
+public class Atividade01 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite a primeria nota: ");
+        double primeiroNumero = scanner.nextDouble();
+        
+        System.out.print("Digite a segundo nota: ");
+        double segundoNumero = scanner.nextDouble();
+        
+        System.out.print("Digite a terceiro nota: ");
+        double terceiroNumero = scanner.nextDouble();
+        
+        double nota = (primeiroNumero + segundoNumero + terceiroNumero) / 3;
+        
+        scanner.close();
+        
+        System.out.println("Nota Final: " + nota);
+    }
+}
