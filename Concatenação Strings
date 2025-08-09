@@ -1,0 +1,21 @@
+/*Exercício de Concatenação de Strings: Peça ao usuário que digite seu nome e
+sobrenome separadamente (duas strings). Em seguida, concatene os dois valores
+para formar o nome completo e exiba-o na tela.*/
+
+import java.util.Scanner;
+
+public class Atividade01 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite seu nome: ");
+        String nome = scanner.nextLine();
+
+        System.out.print("Digite seu sobrenome: ");
+        String sobrenome = scanner.nextLine();
+
+        System.out.println("Nome completo: " + nome + " " + sobrenome);
+
+        scanner.close();
+    }
+}
