@@ -1,0 +1,21 @@
+/*Exercício de Contagem de Caracteres: Crie um programa que solicite ao usuário
+que digite uma frase (uma string). Em seguida, conte o número de caracteres
+(incluindo espaços) na frase e exiba o resultado na tela.
+*/
+
+import java.util.Scanner;
+
+public class Atividade01 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite uma frase: ");
+        String frase = scanner.nextLine();
+
+        int quantidadeCaracteres = frase.length();
+
+        System.out.println("A frase possui " + quantidadeCaracteres + " caracteres (incluindo espaços).");
+
+        scanner.close();
+    }
+}
