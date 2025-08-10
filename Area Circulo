@@ -1,0 +1,19 @@
+/*Exercício de Cálculo de Área de um Círculo: Peça ao usuário que digite o raio de
+um círculo (número de ponto flutuante). Em seguida, calcule a área do círculo
+usando a fórmula A = π * r^2, onde π (pi) é uma constante aproximada de 3.14159.
+Exiba a área na tela.*/
+
+import java.util.Scanner;
+
+public class Atividade01 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Insira o Raio do Círculo: ");
+        double raio = scanner.nextDouble();
+        
+        double area = 3.14 * (raio * raio);
+
+        System.out.print("A Área do círculo é: " + area);
+    }
+}
