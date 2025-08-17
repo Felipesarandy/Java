@@ -1,0 +1,29 @@
+Cálculo de Desconto: Escreva um programa em Java que solicita ao usuário que
+digite o código de um produto (1, 2 ou 3). Utilize a estrutura de decisão switch-case
+para verificar o código digitado e calcular o desconto correspondente.
+
+import java.util.Scanner;
+
+public class POO_I {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Insira um numero de 1 a 3: ");
+        int codigo = scanner.nextInt();
+        
+        switch(codigo){
+            case 1:
+                System.out.print("Codigo 1");
+                break;
+            case 2:
+                System.out.print("Codigo 2");
+                break;
+            case 3:
+                System.out.print("Codigo 3");
+                break;
+            default:
+                System.out.println("Codigo invalido!");
+                break;
+        }
+        
+    }
+}
