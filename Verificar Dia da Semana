@@ -1,0 +1,42 @@
+Verificar Dia da Semana: Escreva um programa em Java que solicite ao usuário
+que digite um número de 1 a 7, representando os dias da semana. O programa
+deve utilizar a estrutura de decisão switch-case para verificar o número digitado e
+exibir na tela o dia da semana correspondente.
+
+import java.util.Scanner;
+
+public class POO_I {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Insira um numero de 1 a 7: ");
+        int diaSemana = scanner.nextInt();
+        
+        switch(diaSemana){
+            case 1:
+                System.out.print("Domingo");
+                break;
+            case 2:
+                System.out.print("Segunda");
+                break;
+            case 3:
+                System.out.print("Terça");
+                break;
+            case 4:
+                System.out.print("Quarta");
+                break;
+            case 5:
+                System.out.print("Quinta");
+                break;
+            case 6:
+                System.out.print("Sexta");
+                break;
+            case 7:
+                System.out.print("Sabado");
+                break;
+            default:
+                System.out.println("Dia invalido!");
+                break;
+        }
+        
+    }
+}
