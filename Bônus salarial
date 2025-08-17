@@ -1,0 +1,24 @@
+/*Cálculo de Bônus Salarial: Escreva um programa em Java que solicita ao usuário
+que digite o valor do salário mensal. O programa deve calcular o bônus salarial de
+acordo com a seguinte regra: se o salário for menor ou igual a R$ 1000, o bônus
+será de 10% do salário; caso contrário, o bônus será de 5% do salário. Em
+seguida, exiba o valor do bônus na tela.*/
+
+import java.util.Scanner;
+
+public class POO_I {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite o Valor do salario mensal: ");
+        double salario = scanner.nextDouble();
+        
+        if(salario <= 1000){
+            double bonus = salario * 0.10;
+            System.out.print("Bonus: "+ bonus);
+        }
+        else{
+            double bonus = salario * 0.05;
+            System.out.print("Bonus: "+ bonus);
+        }
+    }
+}
