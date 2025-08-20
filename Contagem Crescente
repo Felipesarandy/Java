@@ -1,7 +1,6 @@
 Contagem Crescente: Escreva um programa em Java que solicita ao usuário um
 número inteiro positivo. Em seguida, utilize uma estrutura de repetição while para
 exibir uma contagem crescente a partir de 1 até o número informado pelo usuário.
-2.Soma de Números Inteiros: Escreva um programa em Java que solicita ao usuário
 
 import java.util.Scanner;
 
