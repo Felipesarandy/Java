@@ -1,0 +1,24 @@
+Soma de Números Inteiros: Escreva um programa em Java que solicita ao usuário
+que digite uma sequência de números inteiros. Utilize uma estrutura de repetição
+while para ler os números até que seja digitado um número negativo. Em seguida,
+exiba a soma dos números inteiros digitados (não incluindo o número negativo).
+
+import java.util.Scanner;
+
+    public class POO_I {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            int numero;
+            int soma = 0;
+            
+            System.out.println("Digite numeros inteiros para a soma (numero negativo termina o programa): ");
+            numero = scanner.nextInt();
+            while(numero >= 0){
+                soma += numero;
+                numero = scanner.nextInt();
+            }
+            
+            System.out.print(soma);
+            scanner.close();
+        }
+    }
